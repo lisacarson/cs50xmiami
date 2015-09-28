@@ -10,3 +10,18 @@ Write a function named tellFortune that:
 */
 
 // write your solution here...
+function tellFortune(numChild, partName, geoLoc, job) {
+  if (job.startsWith("a") === true
+  || job.startsWith("e") === true
+  || job.startsWith("i") === true
+  || job.startsWith("o") === true
+  || job.startsWith("u") === true) {
+    console.log("You will be an " + job + " in " + geoLoc + ", and married to " + partName + " with " + numChild + " kids.");
+  }
+  else {
+    console.log("You will be a " + job + " in " + geoLoc + ", and married to " + partName + " with " + numChild + " kids.");
+  }
+}
+tellFortune(3, "Karla", "Miami", "programmer" );
+tellFortune(0, "John", "Ft. Lauderdale", "actor");
+tellFortune(0, "Jane", "Kendall", "salesperson");

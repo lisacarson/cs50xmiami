@@ -12,3 +12,11 @@ Write a function named calculateSupply that:
 */
 
 // write your solution here...
+function calculateSupply(age, amntDay) {
+  var maxAge = 100;
+  var amtConsumed = (100 - age) * amntDay.toPrecision(1);
+  console.log("You will need " + amtConsumed + " to last you until the ripe old age of " + maxAge);
+}
+calculateSupply(52, 1.5);
+calculateSupply(8, 2.1);
+calculateSupply(99, 3.3);

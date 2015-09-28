@@ -11,3 +11,10 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+var tempC = 32;
+var convT = Math.round((((tempC * 9 / 5) + 32) * 10))/10;
+var tempF = 96;
+var convC = (tempF -32) * 5 / 9;
+var roundC = Math.round(convC * 10) / 10;
+console.log(tempC + '\u00B0' + 'C is ' + convT + '\u00B0' + 'F.' );
+console.log(tempF + '\u00B0' + 'F is ' + roundC + '\u00B0' + 'C.' );

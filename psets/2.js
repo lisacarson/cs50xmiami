@@ -12,3 +12,8 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+var currentAge = 37;
+var maxAge = 102;
+var amntDay = 2;
+var lifeSupply = (102-37) * 2;
+console.log('You will need ' + lifeSupply + ' to last you to the ripe old age of ' + maxAge + '.');

@@ -17,4 +17,19 @@ For example:
 
 function notBad(sentence) {
   // write your solution here...
+  var not = sentence.indexOf("not");
+  var bad = sentence.indexOf("bad");
+  if (not === -1)
+    console.log(sentence);
+  else if (not < bad){
+    var string = sentence.substring(not, bad + 3);
+    var re = sentence.replace(string, "good");
+    console.log(re);
+  }
+  else {
+    console.log(sentence);
+  }
 }
+notBad("This dinner is not that bad!");
+notBad("This movie is not so bad!");
+notBad("This dinner is bad!");

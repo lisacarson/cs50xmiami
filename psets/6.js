@@ -14,4 +14,10 @@ Look up the JavaScript string reference to find methods which may be useful!
 
 function mixUp(a, b) {
   // write your solution here...
+  var firstA = a.substring(0,1);
+  var restA = a.substring(1, a.length);
+  var firstB = b.substring(0,1);
+  var restB = b.substring(1, b.length);
+  console.log(firstB + restA + " " + firstA + restB);
 }
+mixUp('apples', 'oranges');

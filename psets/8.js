@@ -17,5 +17,22 @@ For example:
 */
 
 function verbing(word) {
+  var string = word.substring(word.length -3);
+  if (word.length >= 3 && string != "ing"){
+    var ing = word + "ing";
+    console.log(ing);
+
+  }
+  else if (word.length >= 3 && string === "ing"){
+    var ly = word + "ly"
+    console.log(ly);
+  }
+  if (word.length < 3)
+    console.log(word);
+
+
   // write your solution here...
 }
+verbing("swim");
+verbing("loving");
+verbing("go");
